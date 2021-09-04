@@ -16,7 +16,7 @@ public:
     fd = open("/dev/uinput", O_WRONLY | O_NONBLOCK);
 
     ioctl(fd, UI_SET_EVBIT, EV_KEY);
-    int codes[] = { KEY_SPACE, KEY_LEFT };
+    int codes[] = { KEY_SPACE, KEY_LEFT, KEY_C };
     initKeys(codes);
 
     memset(&usetup, 0, sizeof(usetup));

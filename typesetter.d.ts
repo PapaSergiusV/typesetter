@@ -3,7 +3,7 @@ type Typesetter = {
   type: (codes: Int32Array) => void;
 }
 
-type Keys = Record< 'SPACE' | 'LEFT', number>;
+type Keys = Record< 'SPACE' | 'LEFT' | 'C', number>;
 
 export declare const typesetter: Typesetter;
 
